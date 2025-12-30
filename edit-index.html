@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FadingAura | Editors Hub</title>
+
+<!-- Visitor Tracking -->
+<script defer src="https://cdn.counter.dev/script.js"
+        data-id="YOUR_COUNTER_DEV_ID"
+        data-utcoffset="5.5"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#050505;
+  color:#eaeaea;
+  overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:64px;
+  background:rgba(5,5,5,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,255,255,.2);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  z-index:10;
+}
+
+header img{
+  height:38px;
+  cursor:pointer;
+}
+
+header a{
+  color:#00ffff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* MAIN */
+main{
+  padding-top:100px;
+  max-width:1000px;
+  margin:auto;
+  padding-inline:16px;
+  text-align:center;
+}
+
+h1{
+  color:#00ffff;
+  font-size:clamp(2rem,5vw,3.5rem);
+  margin-bottom:10px;
+}
+
+.subtitle{
+  opacity:.75;
+  margin-bottom:30px;
+}
+
+/* INFO TEXT */
+.info{
+  opacity:.85;
+  margin-bottom:24px;
+}
+
+/* BUNDLE BOX */
+.bundle{
+  background:#0b0b0b;
+  border:1px solid rgba(0,255,255,.25);
+  border-radius:16px;
+  padding:22px;
+  max-width:420px;
+  margin:0 auto 32px;
+  box-shadow:0 0 22px rgba(0,255,255,.25);
+}
+
+.bundle button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#00ffff;
+  color:#050505;
+  font-size:1.1rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.bundle button:hover{
+  opacity:.85;
+}
+
+/* MESSAGE BOX */
+.message{
+  max-width:420px;
+  margin:0 auto 50px;
+  background:#007aab;
+  border-radius:14px;
+  padding:18px;
+  color:#e8f7ff;
+  box-shadow:0 0 20px rgba(0,122,171,.6);
+}
+
+.message a{
+  color:#ffffff;
+  font-weight:700;
+  text-decoration:underline;
+}
+
+/* FOLLOW SECTION */
+.follow{
+  margin-bottom:60px;
+}
+
+.follow button{
+  margin-top:16px;
+  padding:14px 28px;
+  background:#00ffff;
+  color:#050505;
+  border:none;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:.85rem;
+  opacity:.6;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .bundle{
+    padding:18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="FadingAura"
+       onclick="window.open('https://www.instagram.com/fading.aura_?igsh=MTUwNWo2OXJsazZlbA=','_blank')">
+  <a href="#bundle">Free Assets ↓</a>
+</header>
+
+<main>
+  <h1>FadingAura | Editors Hub</h1>
+  <p class="subtitle">
+    Free editing assets — Mega Editing Pack Bundle.<br>
+    Follow us on Instagram to unlock downloads.
+  </p>
+
+  <p class="info"><strong>Follow to Unlock Downloads</strong></p>
+  <p class="info">
+    To download assets, please follow
+    <a href="https://www.instagram.com/fading.aura_?igsh=MTUwNWo2OXJsazZlbA=" target="_blank">@fading.aura_</a>
+    on Instagram.
+  </p>
+
+  <section id="bundle" class="bundle">
+    <button onclick="openDrive()">Get Mega Pack</button>
+  </section>
+
+  <section class="message">
+    <p>Hope this helpful to you ❤️</p>
+    <p>
+      For more about it and suggestions, kindly DM<br>
+      <a href="https://www.instagram.com/fading.aura_?igsh=MTUwNWo2OXJsazZlbA=" target="_blank">@FadingAura</a>
+    </p>
+  </section>
+
+  <section class="follow">
+    <p>Follow to support & get more resources</p>
+    <button onclick="follow()">Follow on Instagram</button>
+  </section>
+</main>
+
+<footer>
+  © FadingAura • All assets are free to use for editing.<br>
+  Credits belong to respective creators where applicable.
+</footer>
+
+<script>
+function openDrive(){
+  window.open(
+    "https://drive.google.com/drive/folders/1z7oLsN2oRHQPXx4mU5gyy8hf-L5p0t8v",
+    "_blank"
+  );
+}
+
+function follow(){
+  window.open(
+    "https://www.instagram.com/fading.aura_?igsh=MTUwNWo2OXJsazZlbA=",
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
+
